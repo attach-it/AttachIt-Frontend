@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        .line{
+            border-right: 0.25px solid #DDDEE3;
+            width: 0.1px;
+            height: 100px;
+        }
+
         .cont{
-            width: 780px; height: 100px;
+            width: 880px; height: 100px;
             border: 1px solid #DDDEE3; border-radius: 24px;
             background-color: white; box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.08);
 
@@ -29,18 +35,32 @@
         .palette{
             width: fit-content; height: fit-content;
             display: inline-block;
-            margin: 12px 0px 0px 10px;
+            margin: 12px 22px 0px 10px;
         }
         .palette > *{
             width: 32px; height: 32px;
             border-radius: 100%;
             display: inline-block; margin: 2px;
         }
+
+        .logout{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px 0px 0px 22px;
+        }
+
+        .logoutTxt{
+            color: #202020;
+            font-family: Wanted Sans Variable; font-size: 14px;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <div class="cont">
         <img class="logo" src="./img/logo.svg" alt="logo">
+        <div class="line"></div>
         <img class="Post" src="./img/txtPost.svg" alt="txtPost">
         <img class="Post" src="./img/filePost.svg" alt="filePost">
         <div class="palette">
@@ -53,6 +73,11 @@
             <div style="background-color: #FF9FF0;"></div>
             <div style="background-color: #B57CFF;"></div>
             <div style="background-color: #D9D9D9;"></div>
+        </div>
+        <div class="line"></div>
+        <div class="logout">
+            <img src="./img/logout.svg" alt="logout">
+            <p class="logoutTxt">로그아웃</p>
         </div>
     </div>
     
